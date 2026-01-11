@@ -1,1 +1,161 @@
-COMING SOON
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ashton Wolf | DFIR & Cybersecurity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: #050816; color: #e5e7eb; }
+    header { padding: 2.5rem 1.5rem; text-align: center; background: radial-gradient(circle at top, #1e293b, #020617); }
+    h1 { margin: 0 0 0.5rem; font-size: 2.5rem; }
+    h2 { margin: 2rem 0 0.75rem; font-size: 1.5rem; }
+    p { margin: 0.25rem 0; line-height: 1.6; }
+    .tagline { color: #94a3b8; max-width: 40rem; margin: 0 auto; }
+    .marquee {
+      overflow: hidden; white-space: nowrap; box-sizing: border-box;
+      border-top: 1px solid #1f2933; border-bottom: 1px solid #1f2933;
+      background: #020617;
+    }
+    .marquee span {
+      display: inline-block; padding-left: 100%;
+      animation: marquee 18s linear infinite;
+    }
+    @keyframes marquee {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(-100%, 0); }
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    .grid { display: grid; gap: 1.5rem; }
+    @media (min-width: 768px) { .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    .card {
+      background: #020617; border-radius: 0.75rem; padding: 1.25rem 1.5rem;
+      border: 1px solid #1f2937;
+    }
+    .pill-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+    .pill {
+      padding: 0.25rem 0.65rem; border-radius: 999px;
+      background: #0f172a; color: #e5e7eb; font-size: 0.8rem;
+      border: 1px solid #1f2937;
+    }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin-top: 1.5rem; }
+    .btn {
+      padding: 0.6rem 1.2rem; border-radius: 999px; border: 1px solid #38bdf8;
+      color: #e0f2fe; background: transparent; cursor: pointer;
+      text-decoration: none; font-size: 0.9rem;
+    }
+    .btn.primary {
+      background: linear-gradient(135deg, #38bdf8, #22c55e);
+      border-color: transparent; color: #020617; font-weight: 600;
+    }
+    footer {
+      padding: 1.5rem; text-align: center; font-size: 0.85rem;
+      color: #64748b; border-top: 1px solid #1f2937; background: #020617;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ashton Wolf</h1>
+    <p class="tagline">
+      Digital Forensics & Incident Response specialist building practical tools, investigations,
+      and blog content to help teams detect, analyze, and recover from real-world attacks.
+    </p>
+    <div class="btn-row">
+      <a class="btn primary" href="#projects">View projects</a>
+      <a class="btn" href="#resume">View resume</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </header>
+
+  <div class="marquee">
+    <span>
+      Memory forensics • Incident response • Malware analysis • Threat hunting • NIST / MITRE ATT&CK •
+      DFIR tooling • Log analysis &nbsp;&nbsp;&nbsp;
+    </span>
+  </div>
+
+  <main class="container">
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Security practitioner with hands-on experience across digital forensics, incident response,
+        and threat hunting. This site is my playground for experiments, writeups, and portfolio work.
+      </p>
+    </section>
+
+    <section id="highlights">
+      <h2>Focus areas</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Incident response</h3>
+          <p>End-to-end IR from detection to containment, eradication, and lessons learned.</p>
+          <div class="pill-row">
+            <span class="pill">Triage playbooks</span>
+            <span class="pill">Memory capture</span>
+            <span class="pill">Disk forensics</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Threat detection</h3>
+          <p>Building detections and lab scenarios mapped to MITRE ATT&amp;CK.</p>
+          <div class="pill-row">
+            <span class="pill">Sigma / KQL</span>
+            <span class="pill">EDR analysis</span>
+            <span class="pill">Windows internals</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Featured projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Malware triage lab</h3>
+          <p>Self-contained lab for walking through memory capture, basic reversing,
+             and timeline analysis after a workstation compromise.</p>
+          <div class="pill-row">
+            <span class="pill">Mem forensics</span>
+            <span class="pill">Volatility</span>
+            <span class="pill">Windows</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Cloud IR playbook</h3>
+          <p>Scenario-based runbook for triaging cloud account compromise and token theft.</p>
+          <div class="pill-row">
+            <span class="pill">Cloud</span>
+            <span class="pill">IR</span>
+            <span class="pill">Detection</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>
+        Add a short summary here and link to a PDF or a dedicated resume page.
+        For example: “Download my resume as PDF” or “View web resume”.
+      </p>
+      <!-- Example: <a class="btn" href="/assets/ashton-wolf-resume.pdf">Download PDF</a> -->
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/your-handle">github.com/your-handle</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/your-handle">linkedin.com/in/your-handle</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Ashton Wolf · ashtonwolf.net
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
