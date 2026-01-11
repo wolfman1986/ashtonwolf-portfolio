@@ -2,19 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Ashton Wolf | DFIR & Cybersecurity</title>
+  <title>Ashton Wolf | Cybersecurity & DFIR</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: #050816; color: #e5e7eb; }
+    a { color: #38bdf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
     header { padding: 2.5rem 1.5rem; text-align: center; background: radial-gradient(circle at top, #1e293b, #020617); }
     h1 { margin: 0 0 0.5rem; font-size: 2.5rem; }
     h2 { margin: 2rem 0 0.75rem; font-size: 1.5rem; }
+    h3 { margin: 0 0 0.5rem; font-size: 1.1rem; }
     p { margin: 0.25rem 0; line-height: 1.6; }
-    .tagline { color: #94a3b8; max-width: 40rem; margin: 0 auto; }
+    .muted { color: #94a3b8; }
+    .tagline { color: #94a3b8; max-width: 44rem; margin: 0.5rem auto 0; }
+    .meta { margin-top: 0.5rem; font-size: 0.9rem; color: #cbd5f5; }
+    .meta span { display: inline-block; margin: 0 0.4rem; }
+
     .marquee {
       overflow: hidden; white-space: nowrap; box-sizing: border-box;
       border-top: 1px solid #1f2933; border-bottom: 1px solid #1f2933;
-      background: #020617;
+      background: #020617; font-size: 0.9rem; color: #94a3b8;
     }
     .marquee span {
       display: inline-block; padding-left: 100%;
@@ -24,6 +31,7 @@
       0% { transform: translate(0, 0); }
       100% { transform: translate(-100%, 0); }
     }
+
     .container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
     .grid { display: grid; gap: 1.5rem; }
     @media (min-width: 768px) { .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
@@ -47,6 +55,8 @@
       background: linear-gradient(135deg, #38bdf8, #22c55e);
       border-color: transparent; color: #020617; font-weight: 600;
     }
+    .role-meta { font-size: 0.9rem; color: #9ca3af; margin-bottom: 0.4rem; }
+
     footer {
       padding: 1.5rem; text-align: center; font-size: 0.85rem;
       color: #64748b; border-top: 1px solid #1f2937; background: #020617;
@@ -55,97 +65,177 @@
 </head>
 <body>
   <header>
-    <h1>Ashton Wolf</h1>
+    <h1>Ashton Wolf, CySA+</h1>
+    <p class="muted">Spanaway / Tacoma, WA · Cybersecurity Analyst · Incident Response · Risk Management</p>
     <p class="tagline">
-      Digital Forensics & Incident Response specialist building practical tools, investigations,
-      and blog content to help teams detect, analyze, and recover from real-world attacks.
+      Cybersecurity and IT leader with a 22-year U.S. Army career securing mission‑critical systems,
+      leading teams through audits and compliance, and integrating enterprise security platforms to
+      strengthen resilience and operational readiness.
     </p>
+    <div class="meta">
+      <span><strong>Email:</strong> <a href="mailto:ashton.wolf@yahoo.com">ashton.wolf@yahoo.com</a></span>
+      <span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/ashton-wolf">linkedin.com/ashton-wolf</a></span>
+      <span><strong>Phone:</strong> 706‑814‑3799</span>
+    </div>
     <div class="btn-row">
-      <a class="btn primary" href="#projects">View projects</a>
-      <a class="btn" href="#resume">View resume</a>
-      <a class="btn" href="#contact">Get in touch</a>
+      <a class="btn primary" href="#experience">View experience</a>
+      <a class="btn" href="#skills">Core skills</a>
+      <a class="btn" href="#education">Education</a>
+      <a class="btn" href="#certs">Certifications</a>
     </div>
   </header>
 
   <div class="marquee">
     <span>
-      Memory forensics • Incident response • Malware analysis • Threat hunting • NIST / MITRE ATT&CK •
-      DFIR tooling • Log analysis &nbsp;&nbsp;&nbsp;
+      Cybersecurity operations · Threat detection &amp; response · Vulnerability management · SIEM &amp; EDR ·
+      IAM · Risk management · Policy development · Project &amp; team leadership · Elastic Stack · Nessus ·
+      Varonis · Palo Alto · vSphere &nbsp;&nbsp;&nbsp;
     </span>
   </div>
 
   <main class="container">
     <section id="about">
-      <h2>About</h2>
+      <h2>Professional summary</h2>
       <p>
-        Security practitioner with hands-on experience across digital forensics, incident response,
-        and threat hunting. This site is my playground for experiments, writeups, and portfolio work.
+        Cybersecurity and IT leader with 22 years in the U.S. Army, specializing in network defense,
+        enterprise cloud infrastructure, and risk management. Trusted with an active TS/SCI clearance
+        and experience guiding teams through audits, compliance assessments, and complex technology
+        integrations.
+      </p>
+      <p>
+        Hands-on with enterprise cybersecurity platforms including Elastic Stack, Nessus, Varonis, and
+        Palo Alto firewalls in vSphere environments, with a track record of improving threat visibility,
+        detection, and incident response workflows.
       </p>
     </section>
 
-    <section id="highlights">
-      <h2>Focus areas</h2>
+    <section id="skills">
+      <h2>Areas of expertise</h2>
       <div class="grid grid-2">
         <div class="card">
-          <h3>Incident response</h3>
-          <p>End-to-end IR from detection to containment, eradication, and lessons learned.</p>
+          <h3>Operations & detection</h3>
           <div class="pill-row">
-            <span class="pill">Triage playbooks</span>
-            <span class="pill">Memory capture</span>
-            <span class="pill">Disk forensics</span>
+            <span class="pill">Cybersecurity operations</span>
+            <span class="pill">Threat detection &amp; response</span>
+            <span class="pill">Vulnerability management</span>
+            <span class="pill">SIEM &amp; EDR</span>
           </div>
         </div>
         <div class="card">
-          <h3>Threat detection</h3>
-          <p>Building detections and lab scenarios mapped to MITRE ATT&amp;CK.</p>
+          <h3>Governance & leadership</h3>
           <div class="pill-row">
-            <span class="pill">Sigma / KQL</span>
-            <span class="pill">EDR analysis</span>
-            <span class="pill">Windows internals</span>
+            <span class="pill">IAM</span>
+            <span class="pill">Risk management</span>
+            <span class="pill">Policy development</span>
+            <span class="pill">Project &amp; team leadership</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Platforms & tooling</h3>
+          <div class="pill-row">
+            <span class="pill">Elastic Stack</span>
+            <span class="pill">Nessus / ACAS</span>
+            <span class="pill">Varonis</span>
+            <span class="pill">Palo Alto firewalls</span>
+            <span class="pill">vSphere</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Cloud & infrastructure</h3>
+          <div class="pill-row">
+            <span class="pill">Enterprise networks</span>
+            <span class="pill">Cloud foundations</span>
+            <span class="pill">Secure architecture</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="projects">
-      <h2>Featured projects</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Malware triage lab</h3>
-          <p>Self-contained lab for walking through memory capture, basic reversing,
-             and timeline analysis after a workstation compromise.</p>
-          <div class="pill-row">
-            <span class="pill">Mem forensics</span>
-            <span class="pill">Volatility</span>
-            <span class="pill">Windows</span>
-          </div>
-        </div>
-        <div class="card">
-          <h3>Cloud IR playbook</h3>
-          <p>Scenario-based runbook for triaging cloud account compromise and token theft.</p>
-          <div class="pill-row">
-            <span class="pill">Cloud</span>
-            <span class="pill">IR</span>
-            <span class="pill">Detection</span>
-          </div>
-        </div>
+    <section id="experience">
+      <h2>Work experience</h2>
+
+      <div class="card">
+        <h3>Sr. Cybersecurity Analyst</h3>
+        <div class="role-meta">U.S. Army · Tacoma, WA · Jan 2024 – Present</div>
+        <ul>
+          <li>Implemented and managed ACAS, Elastic Stack, Nessus, Varonis, and Palo Alto in vSphere environments, increasing threat visibility and strengthening enterprise defense posture.</li>
+          <li>Integrated Varonis with Elastic Stack SIEM to establish visibility into user behavior and sensitive data access patterns across multiple enterprise security enclaves.</li>
+          <li>Built and optimized custom Elastic dashboards, queries, and alerts that improved real-time threat visibility and reduced analyst investigation time for high-priority incidents.</li>
+          <li>Trained, coached, and mentored junior team members on cybersecurity tools, defensive techniques, and operational best practices, elevating technical proficiency and readiness.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Communications Section Manager</h3>
+        <div class="role-meta">U.S. Army · Tacoma, WA · Nov 2020 – Jan 2024</div>
+        <ul>
+          <li>Led and developed a rotating team of 30+ communications and cybersecurity personnel, overseeing training, performance, and day-to-day operational readiness.</li>
+          <li>Coordinated priorities and resource allocation across staff elements, representing the section in command-level meetings and briefing senior leadership on risks and requirements.</li>
+          <li>Served as primary Government Purchase Card holder, managing $150k+ in communications and cybersecurity procurement while maintaining full fiscal and audit compliance.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Additional experience</h3>
+        <div class="role-meta">U.S. Army · 2009 – 2020</div>
+        <ul>
+          <li><strong>Secure Communications Security Manager (2018–2020)</strong> – Managed secure communications accounts supporting division-level operations, encryption key management, and compliance audits.</li>
+          <li><strong>IT &amp; Cybersecurity Instructor (2016–2018)</strong> – Delivered IT and cybersecurity instruction to 1,500+ students, improving certification pass rates across multiple cohorts.</li>
+          <li><strong>Vulnerability Scanning Administrator (2013–2016)</strong> – Performed enterprise vulnerability scanning across 30,000+ devices using Retina at the Regional Cyber Center-Europe and coordinated remediation.</li>
+          <li><strong>IT Support Team Lead (2009–2013)</strong> – Led help desk, network, and system administration support and implemented SharePoint solutions for a 3,500-person organization.</li>
+        </ul>
       </div>
     </section>
 
-    <section id="resume">
-      <h2>Resume</h2>
-      <p>
-        Add a short summary here and link to a PDF or a dedicated resume page.
-        For example: “Download my resume as PDF” or “View web resume”.
-      </p>
-      <!-- Example: <a class="btn" href="/assets/ashton-wolf-resume.pdf">Download PDF</a> -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>Master of Enterprise Architecture &amp; Business Transformation</h3>
+        <p class="role-meta">Penn State University – University Park, PA · Expected May 2027</p>
+
+        <h3>B.S. Cybersecurity, Minor in Business Administration</h3>
+        <p class="role-meta">American Military University – Charlestown, WV · Conferred Aug 2023 · Cum Laude</p>
+
+        <h3>A.S. Computer Applications</h3>
+        <p class="role-meta">American Military University – Charlestown, WV · Conferred Jul 2016</p>
+      </div>
+    </section>
+
+    <section id="certs">
+      <h2>Technical training &amp; certifications</h2>
+      <div class="card">
+        <h3>Cybersecurity &amp; GIAC</h3>
+        <p class="muted">SANS Institute training:</p>
+        <p>SEC573, SEC566, MGT512, SEC511, AUD507, SEC504, SEC503, SEC501, SEC401</p>
+        <p class="muted">GIAC certifications:</p>
+        <p>GSEC, GCED, GCIH, GCCC, GSNA</p>
+      </div>
+
+      <div class="card">
+        <h3>Information technology</h3>
+        <p class="muted">CompTIA certifications:</p>
+        <p>CASP+, CySA+, Cloud+, Security+, Network+, A+</p>
+      </div>
+
+      <div class="card">
+        <h3>Cloud &amp; network security</h3>
+        <p class="muted">Cloud computing:</p>
+        <p>AWS Certified Cloud Practitioner</p>
+        <p class="muted">Network security:</p>
+        <p>Palo Alto Networks Ultimate Test Drive</p>
+      </div>
+
+      <div class="card">
+        <h3>Data &amp; analytics</h3>
+        <p>Galvanize Bootcamp – Data Analytics Immersive</p>
+      </div>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/your-handle">github.com/your-handle</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/your-handle">linkedin.com/in/your-handle</a></p>
+      <p>Email: <a href="mailto:ashton.wolf@yahoo.com">ashton.wolf@yahoo.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/ashton-wolf">www.linkedin.com/ashton-wolf</a></p>
+      <p>Location: Spanaway / Tacoma, WA</p>
     </section>
   </main>
 
@@ -158,4 +248,5 @@
   </script>
 </body>
 </html>
+
 
