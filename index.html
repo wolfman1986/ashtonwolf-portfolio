@@ -83,6 +83,10 @@
       <a class="btn" href="#education">Education</a>
       <a class="btn" href="#certs">Certifications</a>
     </div>
+
+    <p class="muted" style="margin-top:1rem;">
+      Visitors: <span id="visitor-count">—</span>
+    </p>
   </header>
 
   <div class="marquee">
@@ -247,7 +251,25 @@
   </footer>
 
   <script>
+    // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Visitor counter
+    async function loadVisitorCount() {
+      try {
+        const res = await fetch('/api/visitors');
+        if (!res.ok) throw new Error('Bad response');
+        const data = await res.json();
+        const el = document.getElementById('visitor-count');
+        if (el && typeof data.count === 'number') {
+          el.textContent = data.count.toLocaleString();
+        }
+      } catch (e) {
+        console.error('Visitor counter error:', e);
+      }
+    }
+
+    loadVisitorCount();
   </script>
 </body>
 </html>
